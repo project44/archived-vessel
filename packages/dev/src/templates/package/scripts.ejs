@@ -1,0 +1,20 @@
+---
+to: package.json
+inject: true
+after: scripts
+---
+  "build": "run-s build:*",
+  "build:types": "beemo typescript<%= typeof workspaces !== 'undefined' ? ' --build' : '' %>",
+  "clean": "run-s clean:*",
+  "clean:node-modules": "rimraf '**/node_modules'",
+  "clean:build": "rimraf '<%= typeof workspaces !== 'undefined' ? 'packages/*/' : '' %>{lib,esm}'",
+  "clean:types": "rimraf '<%= typeof workspaces !== 'undefined' ? 'packages/*/' : '' %>{dts,*.tsbuildinfo}'",
+  "coverage": "yarn run test --coverage",
+  "format": "run-s format:*",
+  "format:eslint": "beemo eslint --fix",
+  "format:prettier": "beemo prettier --write",
+  "lint": "run-s lint:*",
+  "lint:eslint": "beemo eslint --cache",
+  "lint:types": "tsc --noEmit --emitDeclarationOnly false",
+  "prepare": "husky install && beemo create-config eslint prettier && yarn run build",
+  "test": "beemo jest",

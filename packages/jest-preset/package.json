@@ -1,0 +1,43 @@
+{
+  "name": "jest-preset-vessel",
+  "version": "0.0.0",
+  "description": "Jest preset for vessel projects.",
+  "main": "./lib/index.js",
+  "types": "./dts/index.d.ts",
+  "files": [
+    "dts/**/*.d.ts",
+    "jest-preset.js",
+    "lib/**/*.{js,map}",
+    "src/**/*.{ts,tsx,json}"
+  ],
+  "author": "project44",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:project44/vessel.git",
+    "directory": "packages/jest-preset"
+  },
+  "peerDependencies": {
+    "jest": ">=27.0.0"
+  },
+  "dependencies": {
+    "@vessel/constants": "^0.0.0",
+    "@types/jest": "^27.4.0",
+    "jest-circus": "^27.4.6"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7"
+  },
+  "packemon": {
+    "inputs": {
+      "index": "src/index.ts",
+      "fileMock": "src/fileMock.ts"
+    },
+    "format": "lib",
+    "platform": "node"
+  },
+  "engines": {
+    "node": ">=12.17.0",
+    "npm": ">=6.13.0"
+  }
+}

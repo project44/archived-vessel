@@ -1,0 +1,40 @@
+{
+  "name": "@vessel/config-jest",
+  "version": "0.0.0",
+  "description": "Jest configuration for beemo.",
+  "main": "./lib/index.js",
+  "types": "./dts/index.d.ts",
+  "files": [
+    "dts/**/*.d.ts",
+    "lib/**/*.{js,map}",
+    "src/**/*.{ts,tsx,json}"
+  ],
+  "author": "project44",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:project44/vessel.git",
+    "directory": "packages/config-jest"
+  },
+  "peerDependencies": {
+    "@beemo/core": "^2.1.3",
+    "@beemo/driver-jest": "^2.0.4",
+    "jest": ">=27.0.0"
+  },
+  "dependencies": {
+    "jest-preset-vessel": "^0.0.0"
+  },
+  "devDependencies": {
+    "@beemo/core": "^2.1.3",
+    "@beemo/driver-jest": "^2.0.4",
+    "jest": "^27.4.7"
+  },
+  "packemon": {
+    "format": "lib",
+    "platform": "node"
+  },
+  "engines": {
+    "node": ">=12.17.0",
+    "npm": ">=6.13.0"
+  }
+}

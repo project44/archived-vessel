@@ -1,0 +1,36 @@
+{
+  "extends": "tsconfig-vessel/tsconfig.workspaces.json",
+  "files": [],
+  "references": [
+    {
+      "path": "packages/babel-preset"
+    },
+    {
+      "path": "packages/config-babel"
+    },
+    {
+      "path": "packages/config-eslint"
+    },
+    {
+      "path": "packages/config-jest"
+    },
+    {
+      "path": "packages/config-prettier"
+    },
+    {
+      "path": "packages/config-typescript"
+    },
+    {
+      "path": "packages/constants"
+    },
+    {
+      "path": "packages/dev"
+    },
+    {
+      "path": "packages/eslint-config"
+    },
+    {
+      "path": "packages/jest-preset"
+    }
+  ]
+}

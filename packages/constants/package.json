@@ -1,0 +1,31 @@
+{
+  "name": "@vessel/constants",
+  "version": "0.0.0",
+  "description": "Reusable constants for vessel projects.",
+  "keywords": [
+    "vessel",
+    "constants"
+  ],
+  "main": "./lib/index.js",
+  "types": "./dts/index.d.ts",
+  "files": [
+    "dts/**/*.d.ts",
+    "lib/**/*.{js,map}",
+    "src/**/*.{ts,tsx,json}"
+  ],
+  "author": "project44",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:project44/vessel.git",
+    "directory": "packages/constants"
+  },
+  "packemon": {
+    "format": "lib",
+    "platform": "node"
+  },
+  "engines": {
+    "node": ">=12.17.0",
+    "npm": ">=6.13.0"
+  }
+}
