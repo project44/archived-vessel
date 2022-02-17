@@ -5,7 +5,7 @@ A Project44 Beemo Jest config based on `jest-preset-vessel`.
 ## Installation
 
 ```bash
-yarn install --dev jest @beemo/core @beemo/driver-jest @vessel/config-jest
+yarn install --dev jest @beemo/core @beemo/driver-jest @manifest-ui/vessel-config-jest
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ yarn install --dev jest @beemo/core @beemo/driver-jest @vessel/config-jest
 Create a `configs/jest.ts` file in your Beemo configuration module that re-exports this config.
 
 ```ts
-export { default } from '@vessel/config-jest';
+export { default } from '@manifest-ui/vessel-config-jest';
 ```
 
 ## Settings
@@ -33,3 +33,4 @@ export default {
     react: true,
   },
 };
+```

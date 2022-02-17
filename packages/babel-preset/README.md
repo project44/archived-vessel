@@ -1,7 +1,8 @@
 # babel-preset-vessel
 
-A Babel preset with Typescript and optional React support for vessel projects. Created for uniting testing, linting,
-local development and applications. If building deployable packages, it is suggested to use [Packemon](https://packemon.dev) instead.
+A Babel preset with Typescript and optional React support for vessel projects. Created for uniting
+testing, linting, local development and applications. If building deployable packages, it is
+suggested to use [Packemon](https://packemon.dev) instead.
 
 ## Installation
 

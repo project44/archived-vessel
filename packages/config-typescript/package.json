@@ -1,5 +1,5 @@
 {
-  "name": "@vessel/config-typescript",
+  "name": "@manifest-ui/vessel-config-typescript",
   "version": "0.0.0",
   "description": "TypeScript configuration for beemo.",
   "keywords": [

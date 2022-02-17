@@ -1,5 +1,5 @@
 {
-  "name": "@vessel/config-jest",
+  "name": "@manifest-ui/vessel-config-jest",
   "version": "0.0.0",
   "description": "Jest configuration for beemo.",
   "keywords": [

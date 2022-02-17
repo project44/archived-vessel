@@ -1,1 +1,1 @@
-module.exports = "prettier-config-vessel";
+module.exports = 'prettier-config-vessel';

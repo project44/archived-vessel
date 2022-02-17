@@ -1,23 +1,24 @@
 # Vessel - Development configuration module
 
-Pre-packaged configs for the Babel, ESLint, Jest, Prettier, and TypeScript drivers and developer tools. Inspired by
-[@beemo/dev](https://github.com/beemojs/dev).
+Pre-packaged configs for the Babel, ESLint, Jest, Prettier, and TypeScript drivers and developer
+tools. Inspired by [@beemo/dev](https://github.com/beemojs/dev).
 
 ## Installation
 
 ```bash
-yarn add --dev @vessel/dev
+yarn add --dev @manifest-ui/vessel-dev
 ```
 
 ## Setup
 
-Create a `.config/beemo.ts` file in the root of your project that configures `@vessel/dev` as the
-configuration module. Be sure to enable all drivers and any settings.
+Create a `.config/beemo.ts` file in the root of your project that configures
+`@manifest-ui/vessel-dev` as the configuration module. Be sure to enable all drivers and any
+settings.
 
 ```ts
 // .config/beemo.ts
 export default {
-  module: '@vessel/dev',
+  module: '@manifest-ui/vessel-dev',
   drivers: ['babel', 'eslint', 'jest', 'prettier', 'typescript'],
   settings: {},
 };

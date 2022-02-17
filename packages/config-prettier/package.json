@@ -1,5 +1,5 @@
 {
-  "name": "@vessel/config-prettier",
+  "name": "@manifest-ui/vessel-config-prettier",
   "version": "0.0.0",
   "description": "Prettier configuration for beemo.",
   "keywords": [
@@ -28,7 +28,7 @@
     "@beemo/driver-prettier": "^2.0.5"
   },
   "dependencies": {
-    "@vessel/constants": "^0.0.0",
+    "@manifest-ui/vessel-constants": "^0.0.0",
     "prettier-config-vessel": "^0.0.0"
   },
   "devDependencies": {

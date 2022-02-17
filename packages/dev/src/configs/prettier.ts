@@ -1,1 +1,1 @@
-export { default } from '@vessel/config-prettier';
+export { default } from '@manifest-ui/vessel-config-prettier';

@@ -1,5 +1,5 @@
 {
-  "name": "@vessel/dev",
+  "name": "@manifest-ui/vessel-dev",
   "version": "0.0.0",
   "description": "Project44 Beemo configuration module for local development.",
   "keywords": [
@@ -39,11 +39,11 @@
     "@beemo/driver-jest": "^2.0.4",
     "@beemo/driver-prettier": "^2.0.5",
     "@beemo/driver-typescript": "^2.1.1",
-    "@vessel/config-babel": "^0.0.0",
-    "@vessel/config-eslint": "^0.0.0",
-    "@vessel/config-jest": "^0.0.0",
-    "@vessel/config-prettier": "^0.0.0",
-    "@vessel/config-typescript": "^0.0.0",
+    "@manifest-ui/vessel-config-babel": "^0.0.0",
+    "@manifest-ui/vessel-config-eslint": "^0.0.0",
+    "@manifest-ui/vessel-config-jest": "^0.0.0",
+    "@manifest-ui/vessel-config-prettier": "^0.0.0",
+    "@manifest-ui/vessel-config-typescript": "^0.0.0",
     "eslint": "^8.7.0",
     "jest": "^27.4.7",
     "prettier": "^2.5.1",

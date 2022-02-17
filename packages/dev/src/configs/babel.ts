@@ -1,1 +1,1 @@
-export { default } from '@vessel/config-babel';
+export { default } from '@manifest-ui/vessel-config-babel';

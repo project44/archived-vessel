@@ -1,27 +1,31 @@
 # 🤖 Vessel
 
-Centralized CLI for JavaScript and TypeScript developer tools. [Built on and powered by Beemo](https://github.com/beemojs/beemo).
+Centralized CLI for JavaScript and TypeScript developer tools.
+[Built on and powered by Beemo](https://github.com/beemojs/beemo).
 
 Intended for use by the Project44 team. Usage outside of the organization is as-is.
 
 ## Packages
 
-- [@vessel/dev](./packages/dev)
-- [@vessel/config-babel](./packages/config-babel)
-- [@vessel/config-eslint](./packages/config-eslint)
-- [@vessel/config-prettier](./packages/config-prettier)
-- [@vessel/config-typescript](./packages/config-typescript)
+- [@manifest-ui/vessel-dev](./packages/dev)
+- [@manifest-ui/vessel-config-babel](./packages/config-babel)
+- [@manifest-ui/vessel-config-eslint](./packages/config-eslint)
+- [@manifest-ui/vessel-config-prettier](./packages/config-prettier)
+- [@manifest-ui/vessel-config-typescript](./packages/config-typescript)
 
 ## Features
 
-- Stand-alone configurations and plugins for `babel, eslint, jest, prettier and typescript`, to be used with or without beemo.
+- Stand-alone configurations and plugins for `babel, eslint, jest, prettier and typescript`, to be
+  used with or without beemo.
 - Drivers powering Beemo process implementations.
-- A centralized `dev` package that pieces the configurations with the drivers to produce a Beemo [Provider](https://beemo.dev/docs/provider/).
+- A centralized `dev` package that pieces the configurations with the drivers to produce a Beemo
+  [Provider](https://beemo.dev/docs/provider/).
 
 ## Quick start
 
 ```bash
-yarn add --dev @vessel/dev
+yarn add --dev @manifest-ui/vessel-dev
 ```
 
-Please refer to the [@vessel/dev](./packages/dev) docs for detailed installation and setup instructions.
+Please refer to the [@manifest-ui/vessel-dev](./packages/dev) docs for detailed installation and
+setup instructions.

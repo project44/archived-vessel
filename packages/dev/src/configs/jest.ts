@@ -1,1 +1,1 @@
-export { default } from '@vessel/config-jest';
+export { default } from '@manifest-ui/vessel-config-jest';

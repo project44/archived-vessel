@@ -5,7 +5,7 @@ A Project44 Beemo TypeScript config based on `tsconfig-vessel`.
 ## Installation
 
 ```bash
-yarn install --dev typescript @beemo/core @beemo/driver-typescript @vessel/config-typescript
+yarn install --dev typescript @beemo/core @beemo/driver-typescript @manifest-ui/vessel-config-typescript
 ```
 
 > Config will automatically assume project references are being used if a project is using
@@ -17,7 +17,7 @@ Create a `configs/typescript.ts` file in your Beemo configuration module that re
 with your own `include`, `exclude`, etc.
 
 ```ts
-import config from '@vessel/config-typescript';
+import config from '@manifest-ui/vessel-config-typescript';
 
 export default {
   ...config,

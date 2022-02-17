@@ -1,3 +1,3 @@
 module.exports = {
-  "**/*.{ts,tsx,js}": ["yarn run format"],
-}
+  '**/*.{ts,tsx,js}': ['yarn run format'],
+};

@@ -1,5 +1,5 @@
 {
-  "name": "@vessel/constants",
+  "name": "@manifest-ui/vessel-constants",
   "version": "0.0.0",
   "description": "Reusable constants for vessel projects.",
   "keywords": [

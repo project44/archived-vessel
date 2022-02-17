@@ -25,7 +25,10 @@ export default function vessel(tool: Tool) {
 
     if (hasNoParams(context, 'babel')) {
       context.addParam('src');
-      context.addOption('--out-dir', tool.config.settings.esm || context.getRiskyOption('esm') ? 'esm' : 'lib');
+      context.addOption(
+        '--out-dir',
+        tool.config.settings.esm || context.getRiskyOption('esm') ? 'esm' : 'lib',
+      );
     }
   }, 'babel');
 

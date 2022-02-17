@@ -1,5 +1,5 @@
 {
-  "name": "@vessel/config-babel",
+  "name": "@manifest-ui/vessel-config-babel",
   "version": "0.0.0",
   "description": "Babel configuration for beemo.",
   "keywords": [

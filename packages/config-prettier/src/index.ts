@@ -1,4 +1,4 @@
-import { IGNORE_PATHS } from '@vessel/constants';
+import { IGNORE_PATHS } from '@manifest-ui/vessel-constants';
 import { PrettierConfig } from '@beemo/driver-prettier';
 
 const config: PrettierConfig = {

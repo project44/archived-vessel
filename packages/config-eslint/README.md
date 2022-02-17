@@ -5,7 +5,7 @@ A Project44 Beemo ESLint config based on `eslint-config-vessel`.
 ## Installation
 
 ```bash
-yarn install --dev eslint @beemo/core @beemo/driver-eslint @vessel/config-eslint
+yarn install --dev eslint @beemo/core @beemo/driver-eslint @manifest-ui/vessel-config-eslint
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ yarn install --dev eslint @beemo/core @beemo/driver-eslint @vessel/config-eslint
 Create a `configs/eslint.ts` file in your Beemo configuration module that re-exports this config.
 
 ```ts
-export { default } from '@vessel/config-eslint';
+export { default } from '@manifest-ui/vessel-config-eslint';
 ```
 
 ## Settings

@@ -1,1 +1,1 @@
-export { default } from '@vessel/config-eslint';
+export { default } from '@manifest-ui/vessel-config-eslint';

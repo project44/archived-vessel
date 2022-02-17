@@ -1,4 +1,4 @@
-import { IGNORE_PATHS, ROOT } from '@vessel/constants';
+import { IGNORE_PATHS, ROOT } from '@manifest-ui/vessel-constants';
 import fs from 'fs';
 import path from 'path';
 

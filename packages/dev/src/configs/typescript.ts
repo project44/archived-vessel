@@ -1,1 +1,1 @@
-export { default } from '@vessel/config-typescript';
+export { default } from '@manifest-ui/vessel-config-typescript';
