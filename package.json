@@ -33,7 +33,6 @@
     "@commitlint/config-lerna-scopes": "^16.2.2",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
-    "depcheck": "^1.4.3",
     "eslint": "^8.9.0",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
@@ -44,5 +43,9 @@
     "prettier": "^2.5.1",
     "typescript": "^4.5.5"
   },
-  "version": "1.0.0"
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
