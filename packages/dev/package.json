@@ -21,6 +21,9 @@
   ],
   "author": "project44",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:project44/vessel.git",
