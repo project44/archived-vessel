@@ -47,8 +47,7 @@ jobs:
       - name: Bump version
         if: "!contains(github.event.head_commit.message, '[skip release]')"
         run:
-          yarn bump --yes --conventional-commits --no-changelog --changelog-preset
-          conventionalcommits
+          yarn bump --yes --conventional-commits --no-changelog
 
       - name: Create tag
         if: "!contains(github.event.head_commit.message, '[skip release]')"
@@ -58,16 +57,16 @@ jobs:
       - name: Commit tag
         if: "!contains(github.event.head_commit.message, '[skip release]')"
         run: |
-          git add . && git commit -m "chore: Release v${{steps.new-tag.outputs.tag}} [skip ci]" && git tag -a v${{steps.new-tag.outputs.tag}} -m "v${{steps.new-tag.outputs.tag}}"
+          git add . && git commit -m "chore: release v${{steps.new-tag.outputs.tag}} [skip ci]" && git tag -a v${{steps.new-tag.outputs.tag}} -m "v${{steps.new-tag.outputs.tag}}"
 
       - name: Build
-        run: yarn run pack
+        run: yarn run release
 
       - name: Publish
         if: "!contains(github.event.head_commit.message, '[skip release]')"
         run:
           yarn lerna publish from-package --yes --dist-tag ${{steps.extract-branch.outputs.branch ==
-          'main'}}
+          'main' && 'latest' }}
         env:
           NODE_AUTH_TOKEN: '${{secrets.NPM_TOKEN}}'
 
