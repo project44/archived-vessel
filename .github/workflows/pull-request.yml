@@ -19,14 +19,6 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-node-modules-hash-${{ hashFiles('yarn.lock') }}
 
-      - name: Configure npm
-        run: |
-          cat << EOF > "$HOME/.npmrc"
-            //registry.npmjs.org/:_authToken=$NPM_TOKEN
-          EOF
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
       - name: Install Packages
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn install --production=false
