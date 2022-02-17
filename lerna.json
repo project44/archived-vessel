@@ -7,7 +7,7 @@
     "version": {
       "gitTagVersion": false,
       "push": false,
-      "message": "chore: Release %s [skip ci]",
+      "message": "chore: release %s [skip ci]",
       "forcePublish": "*"
     },
     "publish": {

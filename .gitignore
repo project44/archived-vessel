@@ -15,6 +15,7 @@ dts/
 node_modules/
 
 # Configs
+.npmrc
 *.tsbuildinfo
 
 # MacOS
