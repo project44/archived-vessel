@@ -19,3 +19,11 @@ node_modules/
 
 # MacOS
 .DS_Store
+
+# Cache
+.eslintcache
+.idea
+.npm
+.vscode
+.yarn
+.yarnclean
