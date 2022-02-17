@@ -1,7 +1,6 @@
 {
   "name": "vessel-root",
   "private": true,
-  "version": "0.0.0",
   "repository": "project44/vessel",
   "contributors": [
     "Brandon Clark"
@@ -14,6 +13,7 @@
     "build": "run-s build:*",
     "build:packages": "packemon build --addEngines",
     "build:types": "tsc --build",
+    "bump": "lerna version",
     "format": "run-s format:*",
     "format:eslint": "eslint --fix packages/*/src/**/*.ts",
     "format:prettier": "prettier --write .",
@@ -33,14 +33,19 @@
     "@commitlint/config-lerna-scopes": "^16.2.2",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
-    "depcheck": "^1.4.3",
     "eslint": "^8.9.0",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
+    "lerna": "^4.0.0",
     "lint-staged": "^12.3.4",
     "npm-run-all": "^4.1.5",
     "packemon": "^1.13.0",
     "prettier": "^2.5.1",
     "typescript": "^4.5.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
