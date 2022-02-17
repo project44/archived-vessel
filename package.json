@@ -11,20 +11,34 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "packemon build --addEngines",
-    "clean": "packemon clean",
-    "lint": "eslint --cache --fix packages/*/src/**/*.ts",
+    "build": "run-s build:*",
+    "build:packages": "packemon build --addEngines",
+    "build:types": "tsc --build",
+    "format": "run-s format:*",
+    "format:eslint": "eslint --fix packages/*/src/**/*.ts",
+    "format:prettier": "prettier --write .",
+    "clean": "run-s clean:*",
+    "clean:build": "packemon clean",
+    "clean:types": "rimraf 'packages/*/{dts,*.tsbuildinfo}'",
+    "lint": "run-s lint:*",
+    "lint:eslint": "eslint --cache packages/*/src/**/*.ts",
+    "lint:types": "tsc --noEmit --emitDeclarationOnly false",
     "pack": "NODE_ENV=production yarn run packemon pack --addEngines --addFiles --declaration=standard",
-    "type": "tsc --build"
+    "prepare": "husky install && yarn run build"
   },
   "devDependencies": {
     "@babel/core": "^7.17.4",
     "@commitlint/cli": "^16.2.1",
     "@commitlint/config-conventional": "^16.2.1",
+    "@commitlint/config-lerna-scopes": "^16.2.2",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "depcheck": "^1.4.3",
     "eslint": "^8.9.0",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
     "lint-staged": "^12.3.4",
+    "npm-run-all": "^4.1.5",
     "packemon": "^1.13.0",
     "prettier": "^2.5.1",
     "typescript": "^4.5.5"
