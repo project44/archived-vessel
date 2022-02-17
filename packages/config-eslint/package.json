@@ -2,6 +2,10 @@
   "name": "@vessel/config-eslint",
   "version": "0.0.0",
   "description": "ESLint configuration for beemo.",
+  "keywords": [
+    "eslint-config",
+    "beemo"
+  ],
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
   "files": [

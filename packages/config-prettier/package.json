@@ -2,6 +2,10 @@
   "name": "@vessel/config-prettier",
   "version": "0.0.0",
   "description": "Prettier configuration for beemo.",
+  "keywords": [
+    "prettier-config",
+    "beemo"
+  ],
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
   "files": [
