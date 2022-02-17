@@ -2,6 +2,10 @@
   "name": "@vessel/config-typescript",
   "version": "0.0.0",
   "description": "TypeScript configuration for beemo.",
+  "keywords": [
+    "typescript",
+    "beemo"
+  ],
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
   "files": [

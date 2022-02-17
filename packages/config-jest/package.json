@@ -2,6 +2,10 @@
   "name": "@vessel/config-jest",
   "version": "0.0.0",
   "description": "Jest configuration for beemo.",
+  "keywords": [
+    "jest-config",
+    "beemo"
+  ],
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
   "files": [
