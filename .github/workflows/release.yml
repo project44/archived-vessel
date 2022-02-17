@@ -57,7 +57,7 @@ jobs:
 
       - name: Publish
         if: "!contains(github.event.head_commit.message, '[skip release]')"
-        run: yarn lerna publish from-package --yes --no-verify-access
+        run: yarn lerna publish from-package --yes --no-verify-access --ignore-scripts prepare
         env:
           NODE_AUTH_TOKEN: '${{secrets.NPM_TOKEN}}'
 
