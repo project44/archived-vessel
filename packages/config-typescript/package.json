@@ -1,6 +1,6 @@
 {
   "name": "@manifest-ui/vessel-config-typescript",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "TypeScript configuration for beemo.",
   "keywords": [
     "typescript",
@@ -28,7 +28,7 @@
     "@beemo/driver-typescript": "^2.1.1"
   },
   "dependencies": {
-    "tsconfig-vessel": "^0.0.0"
+    "tsconfig-vessel": "^0.1.0"
   },
   "devDependencies": {
     "@beemo/core": "^2.1.3",

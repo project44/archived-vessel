@@ -1,6 +1,6 @@
 {
   "name": "@manifest-ui/vessel-config-jest",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Jest configuration for beemo.",
   "keywords": [
     "jest-config",
@@ -29,7 +29,7 @@
     "jest": ">=27.0.0"
   },
   "dependencies": {
-    "jest-preset-vessel": "^0.0.0"
+    "jest-preset-vessel": "^0.1.0"
   },
   "devDependencies": {
     "@beemo/core": "^2.1.3",

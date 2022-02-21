@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vessel",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Shared eslint configurations for vessel projects.",
   "keywords": [
     "eslint-config",
@@ -32,7 +32,7 @@
     "eslint": "^8.0.0"
   },
   "dependencies": {
-    "@manifest-ui/vessel-constants": "^0.0.0",
+    "@manifest-ui/vessel-constants": "^0.1.0",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
     "eslint-config-prettier": "^8.3.0",

@@ -1,6 +1,6 @@
 {
   "name": "@manifest-ui/vessel-config-eslint",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "ESLint configuration for beemo.",
   "keywords": [
     "eslint-config",
@@ -29,7 +29,7 @@
     "eslint": ">=8.7.0"
   },
   "dependencies": {
-    "@manifest-ui/vessel-constants": "^0.0.0",
+    "@manifest-ui/vessel-constants": "^0.1.0",
     "eslint-config-vessel": "^0.0.0"
   },
   "devDependencies": {

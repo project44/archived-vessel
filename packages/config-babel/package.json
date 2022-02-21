@@ -1,6 +1,6 @@
 {
   "name": "@manifest-ui/vessel-config-babel",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Babel configuration for beemo.",
   "keywords": [
     "babel-preset",
@@ -28,7 +28,7 @@
     "@beemo/driver-babel": "^2.0.5"
   },
   "dependencies": {
-    "babel-preset-vessel": "^0.0.0"
+    "babel-preset-vessel": "^0.1.0"
   },
   "devDependencies": {
     "@beemo/core": "^2.1.3",

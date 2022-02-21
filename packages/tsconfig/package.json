@@ -1,6 +1,6 @@
 {
   "name": "tsconfig-vessel",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Typescript configs for vessel projects",
   "files": [
     "tsconfig.json",
