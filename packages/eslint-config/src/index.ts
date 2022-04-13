@@ -1,4 +1,4 @@
-import { ECMA_VERSION } from '@manifest-ui/vessel-constants';
+import { ECMA_VERSION } from '@vessel/constants';
 import type eslint from 'eslint';
 
 const config: eslint.Linter.Config = {

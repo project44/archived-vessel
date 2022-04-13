@@ -2,11 +2,6 @@
   "name": "prettier-config-vessel",
   "version": "0.1.0",
   "description": "Prettier config for vessel projects.",
-  "keywords": [
-    "prettier",
-    "config",
-    "vessel"
-  ],
   "main": "./prettier.json",
   "files": [
     "prettier.json"
@@ -18,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:project-44/vessel.git",
+    "url": "git@github.com:project44/vessel.git",
     "directory": "packages/prettier-config"
   }
 }

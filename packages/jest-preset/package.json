@@ -2,10 +2,6 @@
   "name": "jest-preset-vessel",
   "version": "0.1.0",
   "description": "Jest preset for vessel projects.",
-  "keywords": [
-    "jest-preset",
-    "beemo"
-  ],
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
   "files": [
@@ -28,8 +24,8 @@
     "jest": ">=27.0.0"
   },
   "dependencies": {
-    "@manifest-ui/vessel-constants": "^0.1.0",
     "@types/jest": "^27.4.0",
+    "@vessel/constants": "^0.0.0",
     "jest-circus": "^27.4.6"
   },
   "devDependencies": {
