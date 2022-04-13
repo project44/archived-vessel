@@ -1,4 +1,4 @@
-import { getRootProjectReferences, ROOT, TSCONFIG_JSON_PATH } from '@vessel/constants';
+import { getRootProjectReferences, ROOT, TSCONFIG_JSON_PATH } from '@manifest-ui/vessel-constants';
 import type eslint from 'eslint';
 import fs from 'fs';
 import path from 'path';

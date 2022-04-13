@@ -9,7 +9,7 @@
       "path": "packages/constants"
     },
     {
-      "path": "packages/core"
+      "path": "packages/dev"
     },
     {
       "path": "packages/eslint-config"

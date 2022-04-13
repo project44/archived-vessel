@@ -1,6 +1,6 @@
 {
-  "name": "@vessel/core",
-  "version": "0.0.0",
+  "name": "@manifest-ui/vessel-dev",
+  "version": "0.1.0",
   "description": "CLI for JavaScript and Typescript projects",
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
@@ -30,7 +30,7 @@
     "@beemo/driver-jest": "^2.0.5",
     "@beemo/driver-prettier": "^2.0.5",
     "@beemo/driver-typescript": "^2.1.1",
-    "@vessel/constants": "^0.0.0",
+    "@manifest-ui/vessel-constants": "^0.1.0",
     "babel-preset-vessel": "^0.1.0",
     "eslint": "^8.9.0",
     "eslint-config-vessel": "^0.1.0",

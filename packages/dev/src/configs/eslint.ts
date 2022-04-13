@@ -1,5 +1,5 @@
 import { ESLintConfig } from '@beemo/driver-eslint';
-import { IGNORE_PATHS } from '@vessel/constants';
+import { IGNORE_PATHS } from '@manifest-ui/vessel-constants';
 
 const { tool } = process.beemo;
 const { react } = tool.config.settings;

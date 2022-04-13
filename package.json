@@ -12,9 +12,11 @@
   "scripts": {
     "build": "packemon build --addEngines",
     "changeset": "changeset",
-    "clean": "packemon clean",
-    "format": "prettier --write .",
-    "lint": "eslint --ext .ts ./packages",
+    "clean": "packemon clean && rimraf 'packages/**/*/*.tsbuildinfo'",
+    "format": "prettier --list-different 'packages/**/*.{ts,tsx}'",
+    "format:fix": "prettier --write 'packages/**/*.{ts,tsx}'",
+    "lint": "eslint packages/*/src/**/*.ts",
+    "lint:fix": "eslint --fix packages/*/src/**/*.ts",
     "pack": "NODE_ENV=production yarn run packemon pack --addEngines --addFiles --declaration=standard",
     "packages:check": "manypkg check",
     "packages:fix": "manypkg fix",
@@ -36,6 +38,7 @@
     "packemon": "^1.15.0",
     "precise-commits": "^1.0.2",
     "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4.5.5"
   }
 }
