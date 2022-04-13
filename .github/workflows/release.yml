@@ -3,108 +3,20 @@ name: release
 on:
   push:
     paths:
-      - "packages/**"
+      - '.changeset/**'
+      - 'packages/**'
     branches:
       - main
 
 jobs:
-  prerelease:
-    name: Build and lint packages
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-
-      - name: Setup node.js 16.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
-
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
-
-      - name: Load yarn cache
-        uses: actions/cache@v2
-        id: yarn-cache
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn
-
-      - name: Node modules cache
-        uses: actions/cache@v2
-        id: node-modules-cache
-        with:
-          path: |
-            node_modules
-            */*/node_modules
-          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
-
-      - name: Install Dependencies
-        if: steps.yarn-cache.cache-hit != 'true' || steps.node-modules-cacheoutputs.cache-hit != 'true'
-        run: yarn install --immutable
-
-      - name: Run prelease script
-        run: yarn prelease
-
-      - name: Store build artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: compiled-js
-          path: |
-            packages/**/lib/**/*
-
-  version_or_publish:
+  release:
     name: Version or publish packages
-    needs: prerelease
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-
-      - name: Setup node.js 16.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
-
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Load yarn cache
-        uses: actions/cache@v2
-        id: yarn-cache
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn
-
-      - name: Node modules cache
-        uses: actions/cache@v2
-        id: node-modules-cache
-        with:
-          path: |
-            node_modules
-            */*/node_modules
-          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
-
-      - name: Install Dependencies
-        if: steps.yarn-cache.cache-hit != 'true' || steps.node-modules-cacheoutputs.cache-hit != 'true'
-        run: yarn install --immutable
-
-      - name: Download build artifacts
-        uses: actions/download-artifact@v3
-        with:
-          name: compiled-js
-          path: packages/
-
-      - name: "Create Pull Request or Publish to npm"
-        uses: changesets/action@v1
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - uses: changesets/action@v1
         with:
           version: yarn version
           publish: yarn release

@@ -10,23 +10,18 @@
     "url": "git@github.com:project44/vessel.git"
   },
   "scripts": {
-    "build": "yarn run build:js && yarn run build:types",
-    "build:js": "packemon build --addEngines",
-    "build:types": "tsc --build",
+    "build": "packemon build --addEngines",
     "changeset": "changeset",
+    "check": "yarn run type && yarn run lint",
     "clean": "packemon clean && rimraf 'packages/**/*/*.tsbuildinfo'",
     "format": "prettier --list-different 'packages/**/*.{ts,tsx}'",
     "format:fix": "prettier --write 'packages/**/*.{ts,tsx}'",
     "lint": "eslint packages/*/src/**/*.ts",
     "lint:fix": "eslint --fix packages/*/src/**/*.ts",
     "pack": "NODE_ENV=production yarn run packemon pack --addEngines --addFiles --declaration=standard",
-    "packages:check": "manypkg check",
-    "packages:fix": "manypkg fix",
-    "postinstall": "husky install",
-    "prebuild": "yarn clean && yarn packages:check",
-    "prerelease": "yarn build && yarn type && yarn lint",
+    "postinstall": "echo 'poop'",
     "release": "yarn changeset publish",
-    "type-check": "tsc --noEmit --emitDeclarationOnly false",
+    "type": "tsc --build",
     "version": "yarn changeset version && yarn install --mode=update-lockfile"
   },
   "dependencies": {
