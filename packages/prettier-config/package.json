@@ -2,6 +2,10 @@
   "name": "prettier-config-vessel",
   "version": "0.1.0",
   "description": "Prettier config for vessel projects.",
+  "keywords": [
+    "prettier",
+    "vessel"
+  ],
   "main": "./prettier.json",
   "files": [
     "prettier.json"

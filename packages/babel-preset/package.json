@@ -2,6 +2,14 @@
   "name": "babel-preset-vessel",
   "version": "0.1.0",
   "description": "Babel preset for vessel projects",
+  "keywords": [
+    "babel-preset",
+    "vessel",
+    "node",
+    "env",
+    "typescript",
+    "react"
+  ],
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
   "files": [

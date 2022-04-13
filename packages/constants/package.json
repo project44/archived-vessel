@@ -2,6 +2,10 @@
   "name": "@manifest-ui/vessel-constants",
   "version": "0.1.0",
   "description": "Reusable constants for vessel projects.",
+  "keywords": [
+    "vessel",
+    "constants"
+  ],
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
   "files": [

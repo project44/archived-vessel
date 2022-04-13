@@ -2,6 +2,15 @@
   "name": "@manifest-ui/vessel-dev",
   "version": "0.1.0",
   "description": "CLI for JavaScript and Typescript projects",
+  "keywords": [
+    "vessel",
+    "dev",
+    "babel",
+    "eslint",
+    "jest",
+    "prettier",
+    "typescript"
+  ],
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
   "files": [
@@ -18,7 +27,7 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:project44/vessel.git",
-    "directory": "packages/core"
+    "directory": "packages/dev"
   },
   "dependencies": {
     "@babel/cli": "^7.16.8",

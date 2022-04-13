@@ -2,6 +2,13 @@
   "name": "eslint-config-vessel",
   "version": "0.1.0",
   "description": "Shared eslint configurations for vessel projects.",
+  "keywords": [
+    "eslint-config",
+    "eslint",
+    "vessel",
+    "react",
+    "typescript"
+  ],
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
   "files": [
@@ -19,7 +26,7 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:project44/vessel.git",
-    "directory": "packages/esling-config"
+    "directory": "packages/eslint-config"
   },
   "peerDependencies": {
     "eslint": "^8.0.0",

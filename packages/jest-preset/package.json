@@ -2,6 +2,10 @@
   "name": "jest-preset-vessel",
   "version": "0.1.0",
   "description": "Jest preset for vessel projects.",
+  "keywords": [
+    "jest-preset",
+    "vessel"
+  ],
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
   "files": [
