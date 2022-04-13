@@ -141,6 +141,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
       - name: Setup node.js 16.x
         uses: actions/setup-node@v3
         with:
