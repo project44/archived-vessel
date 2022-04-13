@@ -26,5 +26,3 @@ node_modules/
 .idea
 .npm
 .vscode
-.yarn
-.yarnclean
