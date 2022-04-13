@@ -26,5 +26,12 @@ node_modules/
 .idea
 .npm
 .vscode
-.yarn
-.yarnclean
+
+# Yarn Folders
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

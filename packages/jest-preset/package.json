@@ -4,7 +4,7 @@
   "description": "Jest preset for vessel projects.",
   "keywords": [
     "jest-preset",
-    "beemo"
+    "vessel"
   ],
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",

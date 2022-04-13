@@ -1,0 +1,34 @@
+name: release
+
+on:
+  push:
+    paths:
+      - '.changeset/**'
+      - 'packages/**'
+    branches:
+      - main
+
+jobs:
+  release:
+    name: Version or publish packages
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+            cache: yarn
+            node-version: 16
+      - run: yarn install --immutable
+      - run: yarn run pack
+      - uses: changesets/action@v1
+        with:
+          version: yarn version
+          publish: yarn release
+          commit: "chore(release): version packages"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          YARN_ENABLE_IMMUTABLE_INSTALLS: false

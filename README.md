@@ -8,10 +8,6 @@ Intended for use by the Project44 team. Usage outside of the organization is as-
 ## Packages
 
 - [@manifest-ui/vessel-dev](./packages/dev)
-- [@manifest-ui/vessel-config-babel](./packages/config-babel)
-- [@manifest-ui/vessel-config-eslint](./packages/config-eslint)
-- [@manifest-ui/vessel-config-prettier](./packages/config-prettier)
-- [@manifest-ui/vessel-config-typescript](./packages/config-typescript)
 
 ## Features
 

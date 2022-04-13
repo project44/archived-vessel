@@ -1,6 +1,3 @@
-/*
- * See https://github.com/beemojs/dev/blob/master/packages/dev/src/index.ts for representative file from @beemo/dev.
- */
 import { DriverContext, Path, Tool } from '@beemo/core';
 
 const EXTS = ['.ts', '.tsx', '.js', '.jsx'];
@@ -13,7 +10,9 @@ function hasNoParams(context: DriverContext, name: string): boolean {
 
 export default function vessel(tool: Tool) {
   const usingTypeScript = tool.driverRegistry.isRegistered('typescript');
-  const workspacePrefixes = tool.project.getWorkspaceGlobs({ relative: true });
+  const workspacePrefixes = tool.project.getWorkspaceGlobs({
+    relative: true,
+  });
 
   // Babel
   tool.onRunDriver.listen(context => {

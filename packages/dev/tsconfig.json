@@ -9,19 +9,16 @@
   "include": ["src/**/*", "../../types/**/*"],
   "references": [
     {
-      "path": "../config-babel"
+      "path": "../babel-preset"
     },
     {
-      "path": "../config-eslint"
+      "path": "../constants"
     },
     {
-      "path": "../config-jest"
+      "path": "../eslint-config"
     },
     {
-      "path": "../config-prettier"
-    },
-    {
-      "path": "../config-typescript"
+      "path": "../jest-preset"
     }
   ]
 }
