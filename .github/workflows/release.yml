@@ -21,6 +21,12 @@ jobs:
         with:
             cache: yarn
             node-version: 16
+      - run: |
+          cat << EOF > "$HOME/.npmrc"
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          EOF
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: yarn install --immutable
       - run: yarn run pack
       - uses: changesets/action@v1
