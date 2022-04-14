@@ -1,7 +1,7 @@
 {
-  "name": "babel-preset-vessel",
-  "version": "0.1.1",
-  "description": "Babel preset for vessel projects",
+  "name": "@manifest-ui/babel-preset",
+  "version": "0.0.0",
+  "description": "Babel preset for Manifest UI projects",
   "keywords": [
     "babel-preset",
     "vessel",

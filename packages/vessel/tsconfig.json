@@ -1,5 +1,5 @@
 {
-  "extends": "tsconfig-vessel/tsconfig.workspaces.json",
+  "extends": "@manifest-ui/tsconfig/tsconfig.workspaces.json",
   "compilerOptions": {
     "declarationDir": "dts",
     "outDir": "dts",

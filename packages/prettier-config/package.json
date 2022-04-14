@@ -1,7 +1,7 @@
 {
-  "name": "prettier-config-vessel",
-  "version": "0.1.1",
-  "description": "Prettier config for vessel projects.",
+  "name": "@manifest-ui/prettier-config",
+  "version": "0.0.0",
+  "description": "Prettier config for Manifest UI projects.",
   "keywords": [
     "prettier",
     "vessel"

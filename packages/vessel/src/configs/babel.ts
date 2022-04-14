@@ -7,7 +7,7 @@ const config: BabelConfig = {
   babelrc: true,
   babelrcRoots: tool.project.getWorkspaceGlobs({ relative: true }),
   comments: false,
-  presets: [['vessel', { modules: esm, react }]],
+  presets: [['@manifest-ui/babel-preset', { modules: esm, react }]],
 };
 
 export default config;

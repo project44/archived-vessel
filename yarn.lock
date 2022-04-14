@@ -2752,15 +2752,83 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@manifest-ui/babel-preset@^0.0.0, @manifest-ui/babel-preset@workspace:packages/babel-preset":
+  version: 0.0.0-use.local
+  resolution: "@manifest-ui/babel-preset@workspace:packages/babel-preset"
+  dependencies:
+    "@babel/core": ^7.16.10
+    "@babel/helper-plugin-utils": ^7.16.7
+    "@babel/plugin-proposal-class-properties": ^7.16.7
+    "@babel/plugin-proposal-decorators": ^7.17.2
+    "@babel/plugin-proposal-export-default-from": ^7.16.7
+    "@babel/plugin-proposal-export-namespace-from": ^7.16.7
+    "@babel/plugin-proposal-private-methods": ^7.16.11
+    "@babel/plugin-proposal-private-property-in-object": ^7.16.7
+    "@babel/preset-env": ^7.16.11
+    "@babel/preset-react": ^7.16.7
+    "@babel/preset-typescript": ^7.16.7
+    babel-plugin-transform-dev: ^2.0.1
+  peerDependencies:
+    "@babel/core": ">=7.0.0"
+  languageName: unknown
+  linkType: soft
+
+"@manifest-ui/eslint-config@^0.0.0, @manifest-ui/eslint-config@workspace:packages/eslint-config":
+  version: 0.0.0-use.local
+  resolution: "@manifest-ui/eslint-config@workspace:packages/eslint-config"
+  dependencies:
+    "@manifest-ui/vessel-constants": ^0.1.1
+    "@typescript-eslint/eslint-plugin": ^5.12.0
+    "@typescript-eslint/parser": ^5.12.0
+    eslint: ^8.9.0
+    eslint-config-prettier: ^8.3.0
+    eslint-plugin-import: ^2.25.4
+    eslint-plugin-jest: ^26.1.1
+    eslint-plugin-jsx-a11y: ^6.5.1
+    eslint-plugin-prettier: ^4.0.0
+    eslint-plugin-react: ^7.28.0
+    eslint-plugin-react-hooks: ^4.3.0
+    prettier: ^2.5.1
+  peerDependencies:
+    eslint: ^8.0.0
+    prettier: ^2.5.1
+  languageName: unknown
+  linkType: soft
+
+"@manifest-ui/jest-preset@^0.0.0, @manifest-ui/jest-preset@workspace:packages/jest-preset":
+  version: 0.0.0-use.local
+  resolution: "@manifest-ui/jest-preset@workspace:packages/jest-preset"
+  dependencies:
+    "@manifest-ui/vessel-constants": ^0.1.1
+    "@types/jest": ^27.4.0
+    jest: ^27.4.7
+    jest-circus: ^27.4.6
+  peerDependencies:
+    jest: ">=27.0.0"
+  languageName: unknown
+  linkType: soft
+
+"@manifest-ui/prettier-config@^0.0.0, @manifest-ui/prettier-config@workspace:packages/prettier-config":
+  version: 0.0.0-use.local
+  resolution: "@manifest-ui/prettier-config@workspace:packages/prettier-config"
+  languageName: unknown
+  linkType: soft
+
+"@manifest-ui/tsconfig@^0.0.0, @manifest-ui/tsconfig@workspace:packages/tsconfig":
+  version: 0.0.0-use.local
+  resolution: "@manifest-ui/tsconfig@workspace:packages/tsconfig"
+  languageName: unknown
+  linkType: soft
+
 "@manifest-ui/vessel-constants@^0.1.1, @manifest-ui/vessel-constants@workspace:packages/constants":
   version: 0.0.0-use.local
   resolution: "@manifest-ui/vessel-constants@workspace:packages/constants"
   languageName: unknown
   linkType: soft
 
-"@manifest-ui/vessel-dev@workspace:packages/dev":
+"@manifest-ui/vessel@workspace:packages/vessel":
   version: 0.0.0-use.local
-  resolution: "@manifest-ui/vessel-dev@workspace:packages/dev"
+  resolution: "@manifest-ui/vessel@workspace:packages/vessel"
   dependencies:
     "@babel/cli": ^7.16.8
     "@babel/core": ^7.16.10
@@ -2771,15 +2839,15 @@ __metadata:
     "@beemo/driver-jest": ^2.0.5
     "@beemo/driver-prettier": ^2.0.5
     "@beemo/driver-typescript": ^2.1.1
+    "@manifest-ui/babel-preset": ^0.0.0
+    "@manifest-ui/eslint-config": ^0.0.0
+    "@manifest-ui/jest-preset": ^0.0.0
+    "@manifest-ui/prettier-config": ^0.0.0
+    "@manifest-ui/tsconfig": ^0.0.0
     "@manifest-ui/vessel-constants": ^0.1.1
-    babel-preset-vessel: ^0.1.1
     eslint: ^8.9.0
-    eslint-config-vessel: ^0.1.1
     jest: ^27.4.7
-    jest-preset-vessel: ^0.1.1
     prettier: ^2.5.1
-    prettier-config-vessel: ^0.1.1
-    tsconfig-vessel: ^0.1.1
     typescript: ^4.5.5
   languageName: unknown
   linkType: soft
@@ -4133,27 +4201,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-preset-vessel@^0.1.1, babel-preset-vessel@workspace:packages/babel-preset":
-  version: 0.0.0-use.local
-  resolution: "babel-preset-vessel@workspace:packages/babel-preset"
-  dependencies:
-    "@babel/core": ^7.16.10
-    "@babel/helper-plugin-utils": ^7.16.7
-    "@babel/plugin-proposal-class-properties": ^7.16.7
-    "@babel/plugin-proposal-decorators": ^7.17.2
-    "@babel/plugin-proposal-export-default-from": ^7.16.7
-    "@babel/plugin-proposal-export-namespace-from": ^7.16.7
-    "@babel/plugin-proposal-private-methods": ^7.16.11
-    "@babel/plugin-proposal-private-property-in-object": ^7.16.7
-    "@babel/preset-env": ^7.16.11
-    "@babel/preset-react": ^7.16.7
-    "@babel/preset-typescript": ^7.16.7
-    babel-plugin-transform-dev: ^2.0.1
-  peerDependencies:
-    "@babel/core": ">=7.0.0"
-  languageName: unknown
-  linkType: soft
-
 "balanced-match@npm:^1.0.0":
   version: 1.0.2
   resolution: "balanced-match@npm:1.0.2"
@@ -5501,28 +5548,6 @@ __metadata:
   checksum: df4cea3032671995bb5ab07e016169072f7fa59f44a53251664d9ca60951b66cdc872683b5c6a3729c91497c11490ca44a79654b395dd6756beb0c3903a37196
   languageName: node
   linkType: hard
-
-"eslint-config-vessel@^0.1.1, eslint-config-vessel@workspace:packages/eslint-config":
-  version: 0.0.0-use.local
-  resolution: "eslint-config-vessel@workspace:packages/eslint-config"
-  dependencies:
-    "@manifest-ui/vessel-constants": ^0.1.1
-    "@typescript-eslint/eslint-plugin": ^5.12.0
-    "@typescript-eslint/parser": ^5.12.0
-    eslint: ^8.9.0
-    eslint-config-prettier: ^8.3.0
-    eslint-plugin-import: ^2.25.4
-    eslint-plugin-jest: ^26.1.1
-    eslint-plugin-jsx-a11y: ^6.5.1
-    eslint-plugin-prettier: ^4.0.0
-    eslint-plugin-react: ^7.28.0
-    eslint-plugin-react-hooks: ^4.3.0
-    prettier: ^2.5.1
-  peerDependencies:
-    eslint: ^8.0.0
-    prettier: ^2.5.1
-  languageName: unknown
-  linkType: soft
 
 "eslint-import-resolver-node@npm:^0.3.6":
   version: 0.3.6
@@ -7816,19 +7841,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-preset-vessel@^0.1.1, jest-preset-vessel@workspace:packages/jest-preset":
-  version: 0.0.0-use.local
-  resolution: "jest-preset-vessel@workspace:packages/jest-preset"
-  dependencies:
-    "@manifest-ui/vessel-constants": ^0.1.1
-    "@types/jest": ^27.4.0
-    jest: ^27.4.7
-    jest-circus: ^27.4.6
-  peerDependencies:
-    jest: ">=27.0.0"
-  languageName: unknown
-  linkType: soft
-
 "jest-regex-util@npm:^27.5.1":
   version: 27.5.1
   resolution: "jest-regex-util@npm:27.5.1"
@@ -9806,12 +9818,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-config-vessel@^0.1.1, prettier-config-vessel@workspace:packages/prettier-config":
-  version: 0.0.0-use.local
-  resolution: "prettier-config-vessel@workspace:packages/prettier-config"
-  languageName: unknown
-  linkType: soft
-
 "prettier-linter-helpers@npm:^1.0.0":
   version: 1.0.0
   resolution: "prettier-linter-helpers@npm:1.0.0"
@@ -11400,12 +11406,6 @@ __metadata:
   checksum: 4999ec6cd1c7cc06750a460dbc0d39fe3595a4308cb5f1d0d0a8283009cf9c0a30d5a156508c28fe3a47760508af5263ab288fc23d71e9762779674257a95d3b
   languageName: node
   linkType: hard
-
-"tsconfig-vessel@^0.1.1, tsconfig-vessel@workspace:packages/tsconfig":
-  version: 0.0.0-use.local
-  resolution: "tsconfig-vessel@workspace:packages/tsconfig"
-  languageName: unknown
-  linkType: soft
 
 "tslib@npm:^1.8.1":
   version: 1.14.1
