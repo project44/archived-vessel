@@ -2752,7 +2752,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@manifest-ui/vessel-constants@^0.1.0, @manifest-ui/vessel-constants@workspace:packages/constants":
+"@manifest-ui/vessel-constants@^0.1.1, @manifest-ui/vessel-constants@workspace:packages/constants":
   version: 0.0.0-use.local
   resolution: "@manifest-ui/vessel-constants@workspace:packages/constants"
   languageName: unknown
@@ -2771,15 +2771,15 @@ __metadata:
     "@beemo/driver-jest": ^2.0.5
     "@beemo/driver-prettier": ^2.0.5
     "@beemo/driver-typescript": ^2.1.1
-    "@manifest-ui/vessel-constants": ^0.1.0
-    babel-preset-vessel: ^0.1.0
+    "@manifest-ui/vessel-constants": ^0.1.1
+    babel-preset-vessel: ^0.1.1
     eslint: ^8.9.0
-    eslint-config-vessel: ^0.1.0
+    eslint-config-vessel: ^0.1.1
     jest: ^27.4.7
-    jest-preset-vessel: ^0.1.0
+    jest-preset-vessel: ^0.1.1
     prettier: ^2.5.1
-    prettier-config-vessel: ^0.1.0
-    tsconfig-vessel: ^0.1.0
+    prettier-config-vessel: ^0.1.1
+    tsconfig-vessel: ^0.1.1
     typescript: ^4.5.5
   languageName: unknown
   linkType: soft
@@ -4133,7 +4133,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-preset-vessel@^0.1.0, babel-preset-vessel@workspace:packages/babel-preset":
+"babel-preset-vessel@^0.1.1, babel-preset-vessel@workspace:packages/babel-preset":
   version: 0.0.0-use.local
   resolution: "babel-preset-vessel@workspace:packages/babel-preset"
   dependencies:
@@ -5502,11 +5502,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-vessel@^0.1.0, eslint-config-vessel@workspace:packages/eslint-config":
+"eslint-config-vessel@^0.1.1, eslint-config-vessel@workspace:packages/eslint-config":
   version: 0.0.0-use.local
   resolution: "eslint-config-vessel@workspace:packages/eslint-config"
   dependencies:
-    "@manifest-ui/vessel-constants": ^0.1.0
+    "@manifest-ui/vessel-constants": ^0.1.1
     "@typescript-eslint/eslint-plugin": ^5.12.0
     "@typescript-eslint/parser": ^5.12.0
     eslint: ^8.9.0
@@ -7816,11 +7816,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-preset-vessel@^0.1.0, jest-preset-vessel@workspace:packages/jest-preset":
+"jest-preset-vessel@^0.1.1, jest-preset-vessel@workspace:packages/jest-preset":
   version: 0.0.0-use.local
   resolution: "jest-preset-vessel@workspace:packages/jest-preset"
   dependencies:
-    "@manifest-ui/vessel-constants": ^0.1.0
+    "@manifest-ui/vessel-constants": ^0.1.1
     "@types/jest": ^27.4.0
     jest: ^27.4.7
     jest-circus: ^27.4.6
@@ -9806,7 +9806,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-config-vessel@^0.1.0, prettier-config-vessel@workspace:packages/prettier-config":
+"prettier-config-vessel@^0.1.1, prettier-config-vessel@workspace:packages/prettier-config":
   version: 0.0.0-use.local
   resolution: "prettier-config-vessel@workspace:packages/prettier-config"
   languageName: unknown
@@ -11401,7 +11401,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsconfig-vessel@^0.1.0, tsconfig-vessel@workspace:packages/tsconfig":
+"tsconfig-vessel@^0.1.1, tsconfig-vessel@workspace:packages/tsconfig":
   version: 0.0.0-use.local
   resolution: "tsconfig-vessel@workspace:packages/tsconfig"
   languageName: unknown

@@ -1,6 +1,6 @@
 {
   "name": "@manifest-ui/vessel-dev",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CLI for JavaScript and Typescript projects",
   "keywords": [
     "vessel",
@@ -39,15 +39,15 @@
     "@beemo/driver-jest": "^2.0.5",
     "@beemo/driver-prettier": "^2.0.5",
     "@beemo/driver-typescript": "^2.1.1",
-    "@manifest-ui/vessel-constants": "^0.1.0",
-    "babel-preset-vessel": "^0.1.0",
+    "@manifest-ui/vessel-constants": "^0.1.1",
+    "babel-preset-vessel": "^0.1.1",
     "eslint": "^8.9.0",
-    "eslint-config-vessel": "^0.1.0",
+    "eslint-config-vessel": "^0.1.1",
     "jest": "^27.4.7",
-    "jest-preset-vessel": "^0.1.0",
+    "jest-preset-vessel": "^0.1.1",
     "prettier": "^2.5.1",
-    "prettier-config-vessel": "^0.1.0",
-    "tsconfig-vessel": "^0.1.0",
+    "prettier-config-vessel": "^0.1.1",
+    "tsconfig-vessel": "^0.1.1",
     "typescript": "^4.5.5"
   },
   "packemon": {
