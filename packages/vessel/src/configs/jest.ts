@@ -4,7 +4,7 @@ const { tool } = process.beemo;
 const { projects, react } = tool.config.settings;
 
 const config: JestConfig = {
-  preset: 'jest-preset-vessel',
+  preset: '@manifest-ui/jest-preset',
   testEnvironment: react ? 'jsdom' : 'node',
 };
 

@@ -1,5 +1,5 @@
 {
-  "extends": "tsconfig-vessel/tsconfig.workspaces.json",
+  "extends": "@manifest-ui/tsconfig/tsconfig.workspaces.json",
   "files": [],
   "references": [
     {
@@ -9,13 +9,13 @@
       "path": "packages/constants"
     },
     {
-      "path": "packages/dev"
-    },
-    {
       "path": "packages/eslint-config"
     },
     {
       "path": "packages/jest-preset"
+    },
+    {
+      "path": "packages/vessel"
     }
   ]
 }

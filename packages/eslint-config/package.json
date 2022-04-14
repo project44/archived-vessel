@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-vessel",
-  "version": "0.1.1",
-  "description": "Shared eslint configurations for vessel projects.",
+  "name": "@manifest-ui/eslint-config",
+  "version": "0.0.0",
+  "description": "ESLint configs for Manifest UI projects.",
   "keywords": [
     "eslint-config",
     "eslint",

@@ -5,13 +5,13 @@ const { tool } = process.beemo;
 const { react } = tool.config.settings;
 
 const config = {
-  extends: ['vessel'],
+  extends: ['@manifest-ui/eslint-config'],
   ignore: [...IGNORE_PATHS, '*.min.js', '*.map', '*.snap'],
   root: true,
 };
 
 if (react) {
-  config.extends.push('vessel/react');
+  config.extends.push('@manifest-ui/eslint-config/react');
 }
 
 export default config as ESLintConfig;
