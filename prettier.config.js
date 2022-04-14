@@ -1,1 +1,1 @@
-module.exports = 'prettier-config-vessel';
+module.exports = '@manifest-ui/prettier-config';

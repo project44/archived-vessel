@@ -1,4 +1,4 @@
 module.exports = {
-  extends: ['vessel'],
+  extends: ['@manifest-ui/eslint-config'],
   root: true,
 };

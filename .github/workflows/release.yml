@@ -14,22 +14,47 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Repo
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v3
+      
+      - name: Setup Node.js 16.x
+        uses: actions/setup-node@v3
         with:
             cache: yarn
             node-version: 16
-      - run: |
+
+      - name: Configure NPM
+        run: |
           cat << EOF > "$HOME/.npmrc"
             //registry.npmjs.org/:_authToken=$NPM_TOKEN
           EOF
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: yarn install --immutable
-      - run: yarn run pack
-      - uses: changesets/action@v1
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+
+      - name: Load yarn cache
+        uses: actions/cache@v3
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install dependencies
+        if: steps.yarn_cache.outputs.cache-hit != 'true'
+        run: yarn install --immutable
+
+      - name: Build packages
+        run: yarn run pack
+
+      - name: Create pull request or publish to npm
+        uses: changesets/action@v1
         with:
           version: yarn version
           publish: yarn release
