@@ -55,7 +55,7 @@ jobs:
         name: build-artifacts
         path: |
           packages/**/lib/**/*
-          packages/**/dst/**/*
+          packages/**/dts/**/*
 
   format:
     name: Format code
