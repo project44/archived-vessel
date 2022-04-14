@@ -54,7 +54,7 @@ jobs:
           packages/**/dst/**/*
 
   format:
-    name: Format Code
+    name: Format code
     needs: build
     runs-on: ubuntu-latest
 
