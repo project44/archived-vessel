@@ -130,5 +130,5 @@ jobs:
           name: build-artifacts
           path: packages/
 
-      - name: Run prettier
-        run: yarn run format
+      - name: Run eslint
+        run: yarn run lint
