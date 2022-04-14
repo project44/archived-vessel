@@ -1,6 +1,6 @@
 {
   "name": "@manifest-ui/jest-preset",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Jest preset for Manifest UI projects.",
   "keywords": [
     "jest-preset",
@@ -28,7 +28,7 @@
     "jest": ">=27.0.0"
   },
   "dependencies": {
-    "@manifest-ui/vessel-constants": "^0.1.1",
+    "@manifest-ui/vessel-constants": "^0.1.2",
     "@types/jest": "^27.4.0",
     "jest-circus": "^27.4.6"
   },

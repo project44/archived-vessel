@@ -1,6 +1,6 @@
 {
   "name": "@manifest-ui/eslint-config",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "ESLint configs for Manifest UI projects.",
   "keywords": [
     "eslint-config",
@@ -33,7 +33,7 @@
     "prettier": "^2.5.1"
   },
   "dependencies": {
-    "@manifest-ui/vessel-constants": "^0.1.1",
+    "@manifest-ui/vessel-constants": "^0.1.2",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
     "eslint-config-prettier": "^8.3.0",

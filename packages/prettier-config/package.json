@@ -1,6 +1,6 @@
 {
   "name": "@manifest-ui/prettier-config",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Prettier config for Manifest UI projects.",
   "keywords": [
     "prettier",
