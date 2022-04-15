@@ -15,8 +15,15 @@ dts/
 node_modules/
 
 # Configs
-.npmrc
+.babelrc
+.eslintignore
+.eslintrc.js
+.flowconfig
+.prettierignore
+*.config.js
+*.config.ts
 *.tsbuildinfo
+
 
 # MacOS
 .DS_Store

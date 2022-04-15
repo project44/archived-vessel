@@ -1,4 +1,12 @@
-dts/
+build/
+coverage/
+node_modules/
+public/
+esm/
 lib/
+tmp/
+dist/
 *.d.ts
-*.json
+*.min.js
+*.map
+*.snap

@@ -1,5 +1,7 @@
 {
-  "extends": "@manifest-ui/tsconfig/tsconfig.workspaces.json",
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Vessel",
+  "extends": "./tsconfig.options.json",
   "files": [],
   "references": [
     {
