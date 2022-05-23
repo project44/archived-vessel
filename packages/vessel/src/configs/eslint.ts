@@ -4,7 +4,7 @@ const { tool } = process.beemo;
 const { react } = tool.config.settings;
 
 const config = {
-  extends: ['vessel'],
+  extends: ['@manifest-ui/eslint-config'],
   ignore: [
     'build/',
     'coverage/',
