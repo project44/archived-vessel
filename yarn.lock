@@ -3450,7 +3450,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@manifest-ui/babel-preset@^0.1.1, @manifest-ui/babel-preset@workspace:packages/babel-preset":
+"@manifest-ui/babel-preset@^0.1.2, @manifest-ui/babel-preset@workspace:packages/babel-preset":
   version: 0.0.0-use.local
   resolution: "@manifest-ui/babel-preset@workspace:packages/babel-preset"
   dependencies:
@@ -3471,7 +3471,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@manifest-ui/eslint-config@^0.1.1, @manifest-ui/eslint-config@workspace:packages/eslint-config":
+"@manifest-ui/eslint-config@^0.1.2, @manifest-ui/eslint-config@workspace:packages/eslint-config":
   version: 0.0.0-use.local
   resolution: "@manifest-ui/eslint-config@workspace:packages/eslint-config"
   dependencies:
@@ -3492,7 +3492,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@manifest-ui/jest-preset@^0.1.1, @manifest-ui/jest-preset@workspace:packages/jest-preset":
+"@manifest-ui/jest-preset@^0.1.2, @manifest-ui/jest-preset@workspace:packages/jest-preset":
   version: 0.0.0-use.local
   resolution: "@manifest-ui/jest-preset@workspace:packages/jest-preset"
   dependencies:
@@ -3505,13 +3505,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@manifest-ui/prettier-config@^0.1.0, @manifest-ui/prettier-config@workspace:packages/prettier-config":
+"@manifest-ui/prettier-config@^0.1.1, @manifest-ui/prettier-config@workspace:packages/prettier-config":
   version: 0.0.0-use.local
   resolution: "@manifest-ui/prettier-config@workspace:packages/prettier-config"
   languageName: unknown
   linkType: soft
 
-"@manifest-ui/tsconfig@^0.1.0, @manifest-ui/tsconfig@workspace:packages/tsconfig":
+"@manifest-ui/tsconfig@^0.1.1, @manifest-ui/tsconfig@workspace:packages/tsconfig":
   version: 0.0.0-use.local
   resolution: "@manifest-ui/tsconfig@workspace:packages/tsconfig"
   languageName: unknown
@@ -3530,11 +3530,11 @@ __metadata:
     "@beemo/driver-jest": ^2.0.5
     "@beemo/driver-prettier": ^2.0.6
     "@beemo/driver-typescript": ^2.1.2
-    "@manifest-ui/babel-preset": ^0.1.1
-    "@manifest-ui/eslint-config": ^0.1.1
-    "@manifest-ui/jest-preset": ^0.1.1
-    "@manifest-ui/prettier-config": ^0.1.0
-    "@manifest-ui/tsconfig": ^0.1.0
+    "@manifest-ui/babel-preset": ^0.1.2
+    "@manifest-ui/eslint-config": ^0.1.2
+    "@manifest-ui/jest-preset": ^0.1.2
+    "@manifest-ui/prettier-config": ^0.1.1
+    "@manifest-ui/tsconfig": ^0.1.1
     eslint: ^8.16.0
     jest: ^28.1.0
     prettier: ^2.6.2
