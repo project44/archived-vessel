@@ -1,14 +1,6 @@
 {
   "name": "@manifest-ui/eslint-config",
   "version": "0.1.1",
-  "description": "ESLint configs for Manifest UI projects.",
-  "keywords": [
-    "eslint-config",
-    "eslint",
-    "vessel",
-    "react",
-    "typescript"
-  ],
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
   "files": [
@@ -44,8 +36,8 @@
     "eslint-plugin-react-hooks": "^4.3.0"
   },
   "devDependencies": {
-    "eslint": "^8.9.0",
-    "prettier": "^2.5.1"
+    "eslint": "^8.16.0",
+    "prettier": "^2.6.2"
   },
   "packemon": {
     "format": "lib",

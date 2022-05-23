@@ -1,15 +1,6 @@
 {
   "name": "@manifest-ui/babel-preset",
   "version": "0.1.1",
-  "description": "Babel preset for Manifest UI projects",
-  "keywords": [
-    "babel-preset",
-    "vessel",
-    "node",
-    "env",
-    "typescript",
-    "react"
-  ],
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
   "files": [
@@ -44,7 +35,7 @@
     "babel-plugin-transform-dev": "^2.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.10"
+    "@babel/core": "^7.18.0"
   },
   "packemon": {
     "format": "lib",
