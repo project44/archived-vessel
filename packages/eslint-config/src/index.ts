@@ -1,9 +1,8 @@
-import { ECMA_VERSION } from '@manifest-ui/vessel-constants';
 import type eslint from 'eslint';
 
 const config: eslint.Linter.Config = {
   env: {
-    [`es${ECMA_VERSION}`]: true,
+    es2020: true,
   },
   extends: [
     'eslint:recommended',
@@ -18,7 +17,7 @@ const config: eslint.Linter.Config = {
     [`__PROD__`]: 'readonly',
   },
   parserOptions: {
-    ecmaVersion: ECMA_VERSION,
+    ecmaVersion: 2020,
     sourceType: 'module',
   },
   reportUnusedDisableDirectives: true,

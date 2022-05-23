@@ -1,11 +1,17 @@
-import { IGNORE_PATHS } from '@manifest-ui/vessel-constants';
 import { PrettierConfig } from '@beemo/driver-prettier';
 
 const config: PrettierConfig = {
   ...(require('@manifest-ui/prettier-config') as PrettierConfig),
   ignore: [
-    ...IGNORE_PATHS,
-    // Config files
+    'build/',
+    'coverage/',
+    'node_modules/',
+    'public/',
+    'esm/',
+    'lib/',
+    'tmp/',
+    'dist/',
+    '*.d.ts',
     'CHANGELOG.md',
     'lerna.json',
     'package.json',

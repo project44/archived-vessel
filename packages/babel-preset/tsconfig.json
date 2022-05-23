@@ -1,18 +1,10 @@
 {
   "compilerOptions": {
-    "declarationDir": "lib",
-    "outDir": "lib",
+    "declarationDir": "dts",
+    "outDir": "dts",
     "rootDir": "src"
   },
-  "exclude": [
-    "lib",
-    "tests"
-  ],
-  "extends": "../../tsconfig.options.json",
-  "include": [
-    "src/**/*",
-    "types/**/*",
-    "../../types/**/*"
-  ],
-  "references": []
+  "exclude": ["dts"],
+  "extends": "../../tsconfig.json",
+  "include": ["src/**/*", "../../types/**/*"]
 }

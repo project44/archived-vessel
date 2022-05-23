@@ -1,14 +1,9 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Vessel",
-  "extends": "./tsconfig.options.json",
+  "extends": "@manifest-ui/tsconfig/tsconfig.workspaces.json",
   "files": [],
   "references": [
     {
       "path": "packages/babel-preset"
-    },
-    {
-      "path": "packages/constants"
     },
     {
       "path": "packages/eslint-config"
