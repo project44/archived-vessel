@@ -1,6 +1,6 @@
 {
   "name": "@manifest-ui/jest-preset",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Jest preset for Manifest UI projects.",
   "keywords": [
     "jest-preset",

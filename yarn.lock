@@ -3595,7 +3595,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@manifest-ui/babel-preset@^0.1.0, @manifest-ui/babel-preset@workspace:packages/babel-preset":
+"@manifest-ui/babel-preset@^0.1.1, @manifest-ui/babel-preset@workspace:packages/babel-preset":
   version: 0.0.0-use.local
   resolution: "@manifest-ui/babel-preset@workspace:packages/babel-preset"
   dependencies:
@@ -3616,7 +3616,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@manifest-ui/eslint-config@^0.1.0, @manifest-ui/eslint-config@workspace:packages/eslint-config":
+"@manifest-ui/eslint-config@^0.1.1, @manifest-ui/eslint-config@workspace:packages/eslint-config":
   version: 0.0.0-use.local
   resolution: "@manifest-ui/eslint-config@workspace:packages/eslint-config"
   dependencies:
@@ -3637,7 +3637,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@manifest-ui/jest-preset@^0.1.0, @manifest-ui/jest-preset@workspace:packages/jest-preset":
+"@manifest-ui/jest-preset@^0.1.1, @manifest-ui/jest-preset@workspace:packages/jest-preset":
   version: 0.0.0-use.local
   resolution: "@manifest-ui/jest-preset@workspace:packages/jest-preset"
   dependencies:
@@ -3674,9 +3674,9 @@ __metadata:
     "@beemo/driver-jest": ^2.0.5
     "@beemo/driver-prettier": ^2.0.5
     "@beemo/driver-typescript": ^2.1.1
-    "@manifest-ui/babel-preset": ^0.1.0
-    "@manifest-ui/eslint-config": ^0.1.0
-    "@manifest-ui/jest-preset": ^0.1.0
+    "@manifest-ui/babel-preset": ^0.1.1
+    "@manifest-ui/eslint-config": ^0.1.1
+    "@manifest-ui/jest-preset": ^0.1.1
     "@manifest-ui/prettier-config": ^0.1.0
     "@manifest-ui/tsconfig": ^0.1.0
   peerDependencies:
