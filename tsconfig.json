@@ -8,9 +8,6 @@
       "path": "packages/babel-preset"
     },
     {
-      "path": "packages/constants"
-    },
-    {
       "path": "packages/eslint-config"
     },
     {

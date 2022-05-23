@@ -1,6 +1,10 @@
-import { PACKAGE_JSON_PATH, TSCONFIG_JSON_PATH } from './constants';
 import fs from 'fs';
+import path from 'path';
 import type { ProjectReference } from 'typescript';
+
+export const ROOT = process.env.BEEMO_ROOT ?? process.cwd();
+export const PACKAGE_JSON_PATH = path.join(ROOT, 'package.json');
+export const TSCONFIG_JSON_PATH = path.join(ROOT, 'tsconfig.json');
 
 export interface PackageJSON {
   engines?: { node?: string };

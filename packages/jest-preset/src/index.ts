@@ -1,7 +1,7 @@
-import { IGNORE_PATHS, ROOT } from '@manifest-ui/vessel-constants';
 import fs from 'fs';
 import path from 'path';
 
+const ROOT = process.env.BEEMO_ROOT ?? process.cwd();
 const setupFilesAfterEnv: string[] = [];
 const setupFilePath = path.join(ROOT, 'jest.setup.js');
 
@@ -13,7 +13,17 @@ if (fs.existsSync(setupFilePath)) {
 const config = {
   collectCoverageFrom: ['**/{src,__tests__}/**/*.{js,jsx,ts,tsx}'],
   coverageDirectory: './coverage',
-  coveragePathIgnorePatterns: IGNORE_PATHS.map(path => path.replace(/\*+/g, '.*')),
+  coveragePathIgnorePatterns: [
+    'build/',
+    'coverage/',
+    'node_modules/',
+    'public/',
+    'esm/',
+    'lib/',
+    'tmp/',
+    'dist/',
+    '*.d.ts',
+  ].map(path => path.replace(/\*+/g, '.*')),
   coverageReporters: ['text-summary', 'html'],
   coverageThreshold: {
     global: {

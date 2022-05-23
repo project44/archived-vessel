@@ -1,19 +1,12 @@
 {
   "compilerOptions": {
-    "declarationDir": "lib",
-    "outDir": "lib",
+    "declarationDir": "dts",
+    "outDir": "dts",
     "rootDir": "src"
   },
-  "exclude": [
-    "lib",
-    "tests"
-  ],
-  "extends": "../../tsconfig.options.json",
-  "include": [
-    "src/**/*",
-    "types/**/*",
-    "../../types/**/*"
-  ],
+  "exclude": ["dts"],
+  "extends": "../../tsconfig.json",
+  "include": ["src/**/*", "../../types/**/*"],
   "references": [
     {
       "path": "../babel-preset"
@@ -23,9 +16,6 @@
     },
     {
       "path": "../jest-preset"
-    },
-    {
-      "path": "../constants"
     }
   ]
 }

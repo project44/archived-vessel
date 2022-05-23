@@ -1,6 +1,6 @@
 {
   "name": "@manifest-ui/vessel",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "CLI for JavaScript and Typescript projects",
   "keywords": [
     "vessel",
@@ -29,6 +29,12 @@
     "url": "git@github.com:project44/vessel.git",
     "directory": "packages/vessel"
   },
+  "peerDependencies": {
+    "eslint": "^8.0.0",
+    "jest": ">=27.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  },
   "dependencies": {
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.10",
@@ -43,12 +49,7 @@
     "@manifest-ui/eslint-config": "^0.1.0",
     "@manifest-ui/jest-preset": "^0.1.0",
     "@manifest-ui/prettier-config": "^0.1.0",
-    "@manifest-ui/tsconfig": "^0.1.0",
-    "@manifest-ui/vessel-constants": "^0.1.2",
-    "eslint": "^8.9.0",
-    "jest": "^27.4.7",
-    "prettier": "^2.5.1",
-    "typescript": "^4.5.5"
+    "@manifest-ui/tsconfig": "^0.1.0"
   },
   "packemon": {
     "format": "lib",
