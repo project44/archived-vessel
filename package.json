@@ -36,7 +36,7 @@
     "@manypkg/cli": "^0.19.1",
     "eslint": "^8.9.0",
     "husky": "^7.0.0",
-    "packemon": "^1.15.0",
+    "packemon": "^2.2.2",
     "precise-commits": "^1.0.2",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
