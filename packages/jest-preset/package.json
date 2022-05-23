@@ -1,11 +1,6 @@
 {
   "name": "@manifest-ui/jest-preset",
   "version": "0.1.1",
-  "description": "Jest preset for Manifest UI projects.",
-  "keywords": [
-    "jest-preset",
-    "vessel"
-  ],
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
   "files": [
@@ -25,14 +20,15 @@
     "directory": "packages/jest-preset"
   },
   "peerDependencies": {
-    "jest": ">=27.0.0"
+    "jest": ">=26.0.0"
   },
   "dependencies": {
     "@types/jest": "^27.4.0",
-    "jest-circus": "^27.4.6"
+    "jest-circus": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0"
   },
   "devDependencies": {
-    "jest": "^27.4.7"
+    "jest": "^28.1.0"
   },
   "packemon": {
     "inputs": {
