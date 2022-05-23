@@ -1,5 +1,12 @@
 <<<<<<< HEAD
 
+## 0.2.0
+
+### Minor Changes
+
+- [`529c68e`](https://github.com/project44/vessel/commit/529c68ee688ba6b22ec7401ece4f4e470206e820)
+  Thanks [@bclark-p44](https://github.com/bclark-p44)! - Releasing vessel
+
 ## 0.1.0
 
 ### Minor Changes
