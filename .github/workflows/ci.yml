@@ -45,9 +45,6 @@ jobs:
       - name: Build packages
         run: yarn build
 
-      - name: Build types
-        run: yarn type
-
       - name: Store build artifacts
         uses: actions/upload-artifact@v2
         with:
