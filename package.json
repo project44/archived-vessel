@@ -15,7 +15,7 @@
     "clean": "packemon clean && rimraf 'packages/**/*/*.tsbuildinfo'",
     "format": "prettier --write .",
     "lint": "eslint --cache packages/*/src/**/*.ts",
-    "pack": "NODE_ENV=production yarn run packemon pack --addEngines --addFiles --declaration=standard",
+    "pack": "NODE_ENV=production yarn run packemon pack --addEngines --addFiles --declaration",
     "postinstall": "husky install && yarn build",
     "release": "yarn changeset publish",
     "type": "tsc --build",
