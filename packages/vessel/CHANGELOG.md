@@ -1,5 +1,14 @@
 <<<<<<< HEAD
 
+## 0.2.2
+
+### Patch Changes
+
+- Updated dependencies
+  [[`4b6b9a2`](https://github.com/project44/vessel/commit/4b6b9a22fad4bddca482f84fc3f8c6f026e69b55)]:
+  - @manifest-ui/eslint-config@1.0.0
+  - @manifest-ui/jest-preset@0.1.3
+
 ## 0.2.1
 
 ### Patch Changes

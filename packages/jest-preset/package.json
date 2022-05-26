@@ -1,6 +1,6 @@
 {
   "name": "@manifest-ui/jest-preset",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
   "files": [

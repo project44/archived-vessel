@@ -1,5 +1,13 @@
 # @manifest-ui/eslint-config
 
+## 1.0.0
+
+### Major Changes
+
+- [#18](https://github.com/project44/vessel/pull/18)
+  [`4b6b9a2`](https://github.com/project44/vessel/commit/4b6b9a22fad4bddca482f84fc3f8c6f026e69b55)
+  Thanks [@bclark-p44](https://github.com/bclark-p44)! - Updating eslint config to airbnb-typescript
+
 ## 0.1.2
 
 ### Patch Changes
