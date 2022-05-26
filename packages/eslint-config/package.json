@@ -1,6 +1,6 @@
 {
   "name": "@manifest-ui/eslint-config",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
   "files": [

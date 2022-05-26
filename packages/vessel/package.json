@@ -1,6 +1,6 @@
 {
   "name": "@manifest-ui/vessel",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
   "files": [
@@ -30,8 +30,8 @@
     "@beemo/driver-prettier": "^2.0.6",
     "@beemo/driver-typescript": "^2.1.2",
     "@manifest-ui/babel-preset": "^0.1.2",
-    "@manifest-ui/eslint-config": "^0.1.2",
-    "@manifest-ui/jest-preset": "^0.1.2",
+    "@manifest-ui/eslint-config": "^1.0.0",
+    "@manifest-ui/jest-preset": "^0.1.3",
     "@manifest-ui/prettier-config": "^0.1.1",
     "@manifest-ui/tsconfig": "^0.1.1",
     "eslint": "^8.16.0",
