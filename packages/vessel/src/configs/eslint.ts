@@ -1,8 +1,5 @@
 import { ESLintConfig } from '@beemo/driver-eslint';
 
-const { tool } = process.beemo;
-const { react } = tool.config.settings;
-
 const config = {
   extends: ['@manifest-ui/eslint-config'],
   ignore: [
@@ -21,9 +18,5 @@ const config = {
   ],
   root: true,
 };
-
-if (react) {
-  config.extends.push('@manifest-ui/eslint-config/react');
-}
 
 export default config as ESLintConfig;
