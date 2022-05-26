@@ -1,5 +1,13 @@
 # @manifest-ui/eslint-config
 
+## 1.1.0
+
+### Minor Changes
+
+- [#22](https://github.com/project44/vessel/pull/22)
+  [`a0dd29a`](https://github.com/project44/vessel/commit/a0dd29a00d02745d15ec8c7ee3f5c4f60f2cc03f)
+  Thanks [@bclark-p44](https://github.com/bclark-p44)! - Fixing ts lint
+
 ## 1.0.0
 
 ### Major Changes
