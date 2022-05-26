@@ -1,5 +1,13 @@
 # @manifest-ui/eslint-config
 
+## 1.1.1
+
+### Patch Changes
+
+- [#25](https://github.com/project44/vessel/pull/25)
+  [`db2b65c`](https://github.com/project44/vessel/commit/db2b65c9b6b13d5a3b98abdcff32c4cc42dfb609)
+  Thanks [@bclark-p44](https://github.com/bclark-p44)! - Adding ts rules
+
 ## 1.1.0
 
 ### Minor Changes
