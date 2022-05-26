@@ -1,5 +1,12 @@
 <<<<<<< HEAD
 
+## 0.3.0
+
+### Minor Changes
+
+- [`9c605aa`](https://github.com/project44/vessel/commit/9c605aa70fa2992c06c6cb5d623c362590bdc9a3)
+  Thanks [@bclark-p44](https://github.com/bclark-p44)! - Updating eslint config
+
 ## 0.2.3
 
 ### Patch Changes
