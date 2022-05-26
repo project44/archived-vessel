@@ -1,5 +1,13 @@
 <<<<<<< HEAD
 
+## 0.3.1
+
+### Patch Changes
+
+- [#27](https://github.com/project44/vessel/pull/27)
+  [`cfb5bae`](https://github.com/project44/vessel/commit/cfb5baea1a547b74edf132cd5e12b3046fb7e09a)
+  Thanks [@bclark-p44](https://github.com/bclark-p44)! - version bump
+
 ## 0.3.0
 
 ### Minor Changes
