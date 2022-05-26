@@ -23,7 +23,7 @@ const config = {
     'tmp/',
     'dist/',
     '*.d.ts',
-  ].map(path => path.replace(/\*+/g, '.*')),
+  ].map(str => str.replace(/\*+/g, '.*')),
   coverageReporters: ['text-summary', 'html'],
   coverageThreshold: {
     global: {
