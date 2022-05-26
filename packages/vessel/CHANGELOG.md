@@ -1,5 +1,13 @@
 <<<<<<< HEAD
 
+## 0.2.3
+
+### Patch Changes
+
+- [#20](https://github.com/project44/vessel/pull/20)
+  [`8fd9849`](https://github.com/project44/vessel/commit/8fd9849c60331f8f5ec5b72d1dca827812c1c7b2)
+  Thanks [@bclark-p44](https://github.com/bclark-p44)! - Removing eslint react reference
+
 ## 0.2.2
 
 ### Patch Changes
