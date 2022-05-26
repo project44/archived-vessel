@@ -41,27 +41,17 @@ const config: eslint.Linter.Config = {
   },
   plugins: ['import', '@typescript-eslint'],
   rules: {
-    'no-console': ['error', { allow: ['warn', 'error'] }],
     'no-param-reassign': 'off',
     'no-use-before-define': 0,
 
     'import/first': 'error',
-    'import/named': 'off',
+    'import/prefer-default-export': 'off',
     'import/newline-after-import': 'error',
     'import/no-amd': 'error',
     'import/no-extraneous-dependencies': 'off',
     'import/order': ['error', { groups: [], 'newlines-between': 'never' }],
 
-    '@typescript-eslint/ban-ts-comment': [
-      'error',
-      {
-        minimumDescriptionLength: 5,
-        'ts-check': false,
-        'ts-expect-error': 'allow-with-description',
-        'ts-ignore': true,
-        'ts-nocheck': true,
-      },
-    ],
+    '@typescript-eslint/ban-ts-comment': 'warn',
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
@@ -72,6 +62,7 @@ const config: eslint.Linter.Config = {
     '@typescript-eslint/prefer-as-const': 'error',
     '@typescript-eslint/prefer-nullish-coalescing': 'error',
     '@typescript-eslint/prefer-optional-chain': 'error',
+    '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/unbound-method': 'off',
   },
   overrides: [
