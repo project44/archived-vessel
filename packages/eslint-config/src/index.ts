@@ -1,17 +1,33 @@
+import { getRootProjectReferences, ROOT, TSCONFIG_JSON_PATH } from './utils';
 import type eslint from 'eslint';
+import fs from 'fs';
+import path from 'path';
+
+const tsConfigEslintPath = path.join(ROOT, 'tsconfig.eslint.json');
+
+let project: string[] | string = '';
+
+if (fs.existsSync(tsConfigEslintPath)) {
+  project = tsConfigEslintPath;
+}
+
+if (!project) {
+  project =
+    getRootProjectReferences()?.map(ref => path.join(ROOT, ref.path, 'tsconfig.json')) ??
+    TSCONFIG_JSON_PATH;
+}
 
 const config: eslint.Linter.Config = {
   env: {
     browser: true,
-    es6: true,
+    es2020: true,
     node: true,
   },
   extends: [
-    'airbnb-typescript',
-    'plugin:import/recommended',
-    'plugin:import/typescript',
-    'plugin:react/recommended',
-    'prettier',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'plugin:prettier/recommended',
   ],
   globals: {
     [`__DEV__`]: 'readonly',
@@ -19,42 +35,82 @@ const config: eslint.Linter.Config = {
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 10,
-    project: './tsconfig.eslint.json',
+    ecmaVersion: 2020,
+    project,
+    sourceType: 'module',
   },
-  plugins: ['jsx-a11y', 'react-hooks', '@typescript-eslint/eslint-plugin'],
-  settings: {
-    react: {
-      version: 'detect',
-    },
-  },
+  plugins: ['import', '@typescript-eslint'],
   rules: {
-    'comma-dangle': 'off',
-    'import/named': 'off',
-    'import/no-extraneous-dependencies': 'off',
     'no-console': ['error', { allow: ['warn', 'error'] }],
     'no-param-reassign': 'off',
-    'no-return-await': 'error',
     'no-use-before-define': 0,
-    'prefer-destructuring': 'off',
 
-    'react/display-name': 'off',
-    'react/forbid-prop-types': 'off',
-    'react/jsx-props-no-spreading': 'off',
-    'react/prop-types': 'off',
-    'react/require-default-props': 'off',
-    'react/sort-prop-types': 'off',
-    'react-hooks/exhaustive-deps': 'error',
-    'react-hooks/rules-of-hooks': 'error',
+    'import/first': 'error',
+    'import/named': 'off',
+    'import/newline-after-import': 'error',
+    'import/no-amd': 'error',
+    'import/no-extraneous-dependencies': 'off',
+    'import/order': ['error', { groups: [], 'newlines-between': 'never' }],
+
+    '@typescript-eslint/ban-ts-comment': [
+      'error',
+      {
+        minimumDescriptionLength: 5,
+        'ts-check': false,
+        'ts-expect-error': 'allow-with-description',
+        'ts-ignore': true,
+        'ts-nocheck': true,
+      },
+    ],
+    '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-call': 'off',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/prefer-as-const': 'error',
+    '@typescript-eslint/prefer-nullish-coalescing': 'error',
+    '@typescript-eslint/prefer-optional-chain': 'error',
+    '@typescript-eslint/unbound-method': 'off',
   },
   overrides: [
     {
+      files: ['*.tsx'],
+      extends: [
+        'plugin:react-hooks/recommended',
+        'plugin:react/recommended',
+        'plugin:jsx-a11y/recommended',
+      ],
+      plugins: ['jsx-a11y', 'react', 'react-hooks', 'react-perf'],
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+      settings: {
+        react: {
+          version: 'detect',
+        },
+      },
+      rules: {
+        'react/display-name': 'off',
+        'react/forbid-prop-types': 'off',
+        'react/jsx-props-no-spreading': 'off',
+        'react/prop-types': 'off',
+        'react/require-default-props': 'off',
+        'react/sort-prop-types': 'off',
+        'react-hooks/exhaustive-deps': 'error',
+        'react-hooks/rules-of-hooks': 'error',
+      },
+    },
+    {
+      files: ['**/*.{spec,test}.*'],
       env: {
         jest: true,
         'jest/globals': true,
       },
       extends: ['plugin:jest/recommended'],
-      files: ['**/__tests__/**/*', '**/*.{spec,test}.*'],
       plugins: ['jest'],
       rules: {
         '@typescript-eslint/no-unsafe-assignment': 'off',
