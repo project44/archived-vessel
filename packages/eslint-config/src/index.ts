@@ -44,9 +44,12 @@ const config: eslint.Linter.Config = {
     'no-param-reassign': 'off',
     'no-use-before-define': 0,
 
+    'import/first': 'error',
     'import/prefer-default-export': 'off',
     'import/newline-after-import': 'error',
-    'import/no-default-export': 'error',
+    'import/no-amd': 'error',
+    'import/no-extraneous-dependencies': 'off',
+    'import/order': ['error', { groups: [], 'newlines-between': 'never' }],
 
     '@typescript-eslint/ban-ts-comment': 'warn',
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
